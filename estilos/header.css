@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.nav_space img{
+.nav img{
     float: inline-start;
     margin-left: 10px;
 }
@@ -89,5 +89,13 @@ li{
     width: 222px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 576px) {
+    .ham_menu{
+        display: flex;
+    }
+
+    .link_space,
+    .link_entrar{
+        display: none;
+    }
 }
