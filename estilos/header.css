@@ -43,7 +43,8 @@ li{
     font-family: "Wix Madefor Text", Arial, Helvetica, sans-serif;
 }
 
-.ham_menu{
+.ham_menu,
+.cerrar_menu{
     display: none;
 }
 
@@ -59,8 +60,9 @@ li{
     margin-left: auto;
     margin-right: auto;
     margin-top: 3.5rem;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 3rem;
 }
 
 .cesar{
@@ -90,12 +92,35 @@ li{
 }
 
 @media screen and (max-width: 576px) {
+
     .ham_menu{
-        display: flex;
+        display: block;
+        order: 2;
+        float: right;
     }
 
-    .link_space,
-    .link_entrar{
+    .menu_space{
         display: none;
+        visibility: hidden;
+    }
+    
+    .visible{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav_space{
+        justify-content: center;
+        gap: 7rem;
+    }
+
+    .link_space{
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
     }
 }
