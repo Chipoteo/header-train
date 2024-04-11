@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="/Bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="/estilos/normalize.css">
     <link rel="stylesheet" href="/estilos/servicios.css">
@@ -19,25 +20,28 @@
 </head>
 
 <body>
-    <section class="nav">
-        <nav class="nav_space">
-            <img src="/image/paw.png" alt="" srcset="">
-            <button class="ham_menu" type="button">abrir</button>
-            <div>
-                <ul class="link_space">
-                    <li class="li"><a class="link_text" href="/index.html">Inicio</a></li>
-                    <li class="li"><a class="link_text" href="#">Sobre mí</a></li>
-                    <li class="li"><a class="link_text" href="/visuals/mis_servicios.html">Mis servicios</a></li>
-                    <li class="li"><a class="link_text" href="#">Contacto</a></li>
-                </ul>
-            </div>
-            <a class="link_entrar" href="#">Entrar <i class="fa-solid fa-user"></i></a>
-        </nav>
-    </section>
+    <header>
+        <section class="nav">
+            <nav class="nav_space" id="nav_space">
+                <img src="/image/paw.png" alt="" srcset="" id="paw">
+                <button id="ham_menu" class="ham_menu" type="button"><i class="bi bi-list"></i></button>
+                <div class="menu_space" id="menu_space">
+                    <ul id="link_space" class="link_space">
+                        <button class="cerrar_menu" id="cerrar"><i class="bi bi-x"></i></button>
+                        <li class="li"><a class="link_text" href="/index.html">Inicio</a></li>
+                        <li class="li"><a class="link_text" href="#">Sobre mí</a></li>
+                        <li class="li"><a class="link_text" href="/visuals/mis_servicios.html">Mis servicios</a></li>
+                        <li class="li"><a class="link_text" href="#">Contacto</a></li>
+                        <li class="li"><a class="link_entrar" href="#">Entrar <i class="fa-solid fa-user"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </section>
+    </header>
 
     <section class="banner_space_ms">
         <div class="banner">
-            <h1 class="banner_title">MIS SERVICIOS</h1>
+            <h1 class="serv_title">MIS SERVICIOS</h1>
         </div>
     </section>
 
@@ -102,6 +106,7 @@
     </section>
 
     <script src="/Bootstrap/js/bootstrap.js"></script>
+    <script src="/js/header.js"></script>
 </body>
 
 </html>
