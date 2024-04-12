@@ -1,0 +1,54 @@
+
+.volver{
+    text-decoration: none;
+    color: black;
+    margin-left: 10rem;
+}
+
+.volver:hover{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 0.3s;
+}
+
+.paseo_title{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+.info_paseo{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    margin-top: 2.5rem;
+}
+
+.date_picker{
+    display: flex;
+    background-color: aqua;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    flex-direction: column;
+    list-style: none;
+}
+
+.date_selector{
+
+}
+
+.date_title_space{
+    display: inline-flex;
+    gap: 15px;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+}
+
+.date_title{
+    font-size: large;
+}
+
+.date_gmt{
+    font-size: small;
+}
